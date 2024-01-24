@@ -1,0 +1,771 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+   padding: 2rem;
+ }
+
+/*-------------------------------------------------------------------*/
+/*--------------------------------HEADER-----------------------------*/
+.header {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header_logo_image{
+  height: 50px;
+}
+
+.navList {
+  display: flex;
+  gap: 1rem;
+}
+
+.navLink_container{
+  position: relative;
+  padding: 0.5rem;
+}
+
+
+.navLink_container::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  content: '';
+
+  transition: width 0.3s ease-out;
+}
+
+.navLink_container:hover::after {
+  width: 100%;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+}
+/*--------------------------------------------------*/
+/*---------------FOOTER PAGE------------------------*/
+.footer {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  color: #fff;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 14px;
+}
+/*---------------------------------------------------*/
+/*------------------HOME PAGE---------------------------*/
+.text_home {
+  font-size: 30px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 50px;
+}
+.link_home {
+  text-decoration: none;
+  font-weight: bold;
+}
+.link_home:hover {
+  text-decoration: underline;
+}
+
+.pros {
+  font-size: 28px;
+  color: #333;
+}
+
+.section {
+  max-width: 1700px;
+  margin: auto;
+  padding: 20px;
+}
+
+#slider {
+  position: relative;
+  text-align: center;
+  top: 10px;
+  margin: 0 auto;
+}
+
+#slider article {
+  width: 20%;
+  float: left;
+}
+
+#slider .image {
+  width: 500%;
+  line-height: 0;
+}
+
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+article img {
+  width: 100%;
+}
+
+#desktop:checked~#slider {
+  max-width: 960px;
+}
+
+label,
+a {
+  cursor: pointer;
+}
+
+.photo_office input {
+  display: none;
+}
+
+#switch1:checked~#slides .image {
+  margin-left: 0;
+}
+
+#switch2:checked~#slides .image {
+  margin-left: -100%;
+}
+
+#switch3:checked~#slides .image {
+  margin-left: -200%;
+}
+
+#active label {
+  border-radius: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #bbb;
+  margin-bottom: 50px;
+}
+
+#active {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#active label:hover {
+  background: #76c8ff;
+  border-color: #777 !important;
+}
+
+#switch1:checked~#active label:nth-child(1),
+#switch2:checked~#active label:nth-child(2),
+#switch3:checked~#active label:nth-child(3) {
+  background: #18a3dd;
+  border-color: #18a3dd !important;
+}
+
+#slides .image {
+  transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.list_home {
+  list-style-type: disc;
+  padding: 0;
+  margin-top: 25px;
+  margin-left: 40px;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.list_fields_home {
+  margin-bottom: 20px;
+}
+
+.strong_bold {
+  font-weight: bold;
+
+}
+
+.strong_red {
+  color: #ff0000;
+}
+/*-----------------------------------------------------*/
+/*------------------PSYCHO PAGE---------------------------*/
+.separator {
+  border: 0;
+  height: 1px;
+  background: #000;
+  margin-bottom: 48px;
+}
+
+.list_psycho {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: rgba(169, 161, 222, 0.534);
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.pic_psycho_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic_psycho {
+  border-radius: 50%;
+  width: auto;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ded_psycho{
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ded_psycho:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.pic_psycho:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.name_psycho {
+  font-weight: bold;
+}
+
+.page-title {
+  font-size: 52px;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+/*------------------------------------------------------*/
+/*------------------LOGIN, SIGNIN, APPOINTMENT, FEEDBACKS PAGES-------------------------*/
+.error {
+  color: red;
+}
+.registration_success_message {
+  display: none;
+  font-size: 20px;
+}
+.registration-text{
+  display: none;
+  font-size: 25px;
+}
+.tips_registration{
+  display: inline-block;
+  max-width: 30%; /* Ограничиваем ширину элемента */
+  margin-top: 5px;
+  font-size: 0.75em;
+  color: #ffffff; /* Белый текст */
+  background-color: #2f4f4f; /* Темно-шерстяной серый фон */
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #4682b4; /* Стальной синий рамка */ /* Светло-морской зеленый рамка */
+
+}
+.login_submit_btn{
+  background-color: #4caf50;
+}
+
+.login_submit_btn:hover{
+  background-color: #45a049;
+}
+
+.required{
+  color: red;
+  margin-left: 7px;
+}
+.required-fields{
+  color: grey;
+}
+
+.secret-question {
+  font-size: 1.2em; /* Устанавливает размер шрифта */
+  color: #333; /* Устанавливает цвет текста */
+  margin-bottom: 10px; /* Устанавливает отступ снизу */
+  display: block; /* Устанавливает элемент как блочный */
+}
+
+.forgot-password {
+  background-color: #007BFF; /* Устанавливает цвет фона кнопки */
+  color: white; /* Устанавливает цвет текста кнопки */
+  border: none; /* Убирает границу кнопки */
+  padding: 10px 20px; /* Устанавливает внутренние отступы кнопки */
+  text-decoration: none; /* Убирает подчеркивание текста */
+  font-size: 1em; /* Устанавливает размер шрифта */
+  border-radius: 5px; /* Устанавливает скругление углов кнопки */
+  cursor: pointer; /* Устанавливает курсор в виде руки при наведении */
+  transition: .5s background-color ease-in-out;
+}
+
+.forgot-password:hover {
+  background-color: #0056b3;
+
+}
+
+.reset-password-fields {
+  display: none;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 80%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.form_title {
+  text-align: center;
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.form_label {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.form_input,
+.form_select{
+  resize: none;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form_submit_btn {
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: .5s background-color ease-in-out;
+}
+/*---------------------------------------------------------------------------------*/
+/*----------------------------------FEEDBACKS PAGE------------------------------------*/
+.feedback_submit_btn{
+  background-color: #0073e6;
+}
+
+.feedback_submit_btn:hover {
+  background-color: #0056b3;
+}
+
+.banned_text{
+  display: none;
+}
+.pagination-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination-button:hover {
+  background-color: #45a049;
+}
+#pagination-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Добавленный стиль для отступа снизу */
+}
+#feedbacks p {
+  /* Стилизация отдельного отзыва */
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  font-size: 1.2em;
+}
+#feedbacks p:hover {
+  transform: translateY(-10px);
+}
+
+#feedbacks p:before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: #0073e6;
+  border-radius: 50%;
+}
+
+#feedbacks p span {
+  /* Стилизация имени пользователя */
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #0073e6;
+}
+#feedback-section {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-self: flex-start;
+  width: 100%;
+}
+
+#feedback-form {
+  order: 1;
+  width: 100%;
+  margin-bottom: 20px;
+  display:none;
+}
+
+#registration-text {
+  order: 2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.separator2{
+  border: 0;
+  height: 1px;
+  background: #000;
+  margin-bottom: 20px;
+  width: 100%;
+  order: 3;
+}
+
+#feedbacks {
+  order: 4;
+
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.delete-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.delete-btn:hover {
+  background-color: #c82333;
+}
+.block-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 70px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.block-btn:hover {
+  background-color: #0056b3;
+}
+
+.banned_text{
+  color: red;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*-----------------------------APPOINTMENT PAGE---------------------------*/
+.user-info {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 100%;
+  margin: 20px auto;
+  line-height: 1.6;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 1.2em;
+  background-color: #f9f9f9;
+}
+
+.change-button, .delete-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.appointment-title{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.change-button {
+  background-color: #007BFF;
+}
+
+.change-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+/*--------------------------------------------------------------------------------*/
+/*-----------------------------PROFILE PAGE-----------------------------------------*/
+.section-profile {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.title-profile {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form_profile {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form_profile .list_profile {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input_profile {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.button-reset {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button-reset:hover {
+  background: #0056b3;
+}
+
+.user-info .list_profile {
+  margin-bottom: 10px;
+}
+
+.edit-btn {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.edit-btn:hover {
+  background: #0056b3;
+}
+
+.delete-button-profile {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.delete-button-profile:hover {
+  background: #c82333;
+}
+
+.img_profile {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.button_img{
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.button_img:hover {
+  background: #0056b3;
+}
+
+.load_img {
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.invalidField {
+  border: 1px solid red;
+}
+
+/****************************************************************************************/
+/*----------------------------------MEDIA QUERIES----------------------------------------*/
+@media print {
+  .nav, .footer, #slider, .button_img, .load_img, .delete-button-profile, .edit-btn, #reset-password-form, #title-reset-password, .change-button, .delete-button{
+    display: none;
+  }
+
+  body {
+    font-size: 14pt;
+    color: black;
+    background: none;
+  }
+
+  .header_logo {
+    max-width: 100%;
+  }
+
+  .page-title, .title-profile {
+    font-size: 18pt;
+  }
+
+  .strong_bold {
+    font-weight: bold;
+  }
+
+  .strong_red {
+    color: red;
+  }
+
+  .list_profile {
+    font-size: 12pt;
+  }
+}
+
+/******************************************************************************************/
+/*----------------------------------Documentation----------------------------------------*/
+.documentation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+.doc-title{
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+.doc-subtitle{
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+.documentation a{
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.documentation-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
