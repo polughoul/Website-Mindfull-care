@@ -1,0 +1,1 @@
+This website is a semester work for the web application fundamentals course. it is also available on the server https://zwa.toad.cz/~stasiand/Semestralka/semestralka/templates/pages/home.php where you can look at it and try out the functionality
